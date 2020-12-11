@@ -8,7 +8,8 @@
 -->
 <template>
   <div>
-    <a-layout id="components-layout-demo-top" class="layout">
+    <a-button>11</a-button>
+    <!-- <a-layout id="components-layout-demo-top" class="layout">
       <a-layout-header>
         <div class="logo" />
         <a-menu
@@ -41,7 +42,7 @@
         北京一览科技有限公司 《互联网药品信息服务资格证书》的证书编号：XXXXXX
         联系我们：11102938
       </a-layout-footer>
-    </a-layout>
+    </a-layout> -->
   </div>
 </template>
 <script>

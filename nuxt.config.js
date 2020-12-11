@@ -4,7 +4,7 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'yilan_nuxt',
+    title: '药品网站',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -15,9 +15,15 @@ export default {
     ]
   },
 
+  loading: {
+    color: 'blue',
+    height: '5px'
+  },
+
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
-    'ant-design-vue/dist/antd.css'
+    // 'ant-design-vue/dist/antd.css'
+    // 'ant-design-vue/lib/button/style/index.css',
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -40,5 +46,28 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+    filenames: {
+      css: ({ isDev }) => (isDev ? "[name].js" : "[name].[contenthash:7].css"),
+      app: ({ isDev }) => (isDev ? "[name].js" : "[name].[contenthash:7].js"),
+      chunk: ({ isDev }) => (isDev ? "[name].js" : "[name].[contenthash:7].js")
+    },
+    loaders: {
+      less: {
+        javascriptEnabled: true
+      }
+    },
+    babel: {
+      plugins: [
+        [
+          'import',
+          {
+            libraryName: 'ant-design-vue',
+            libraryDirectory: 'es',
+            style: true,
+          }
+        ]
+      ]
+    },
+    transpile: [/ant-design-vue/],
   }
 }
