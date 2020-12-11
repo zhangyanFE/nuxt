@@ -50,6 +50,16 @@ export default {
       app: ({ isDev }) => (isDev ? "[name].js" : "[name].[contenthash:7].js"),
       chunk: ({ isDev }) => (isDev ? "[name].js" : "[name].[contenthash:7].js")
     },
+    extractCSS: process.env.NODE_ENV == "development" ? false : true, // 提取css到独立文件
+    optimization: {
+      minimize: true,
+      splitChunks: {
+        chunks: 'all',
+        automaticNameDelimiter: '.',
+        name: undefined,
+        cacheGroups: {}
+      }
+    },
     loaders: {
       less: {
         javascriptEnabled: true

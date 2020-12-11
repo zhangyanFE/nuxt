@@ -9,3 +9,12 @@
 <template>
   <div>信息中心</div>
 </template>
+<script>
+export default {
+  head() {
+    return {
+      title: '信息中心'
+    }
+  }
+}
+</script>
