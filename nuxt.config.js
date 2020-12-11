@@ -16,11 +16,16 @@ export default {
     ]
   },
 
-  loading: true,
+  // loading: true,
+  layoutTransition: {
+    name: 'layout',
+    mode: 'out-in'
+  },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
     // 'ant-design-vue/dist/antd.css'
+    '~assets/css/main.css'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
