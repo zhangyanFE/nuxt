@@ -1,0 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-12-11 17:52:28
+ * @LastEditTime: 2020-12-11 17:52:59
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /yilan_nuxt/pages/information.vue
+-->
+<template>
+  <div>信息中心</div>
+</template>
