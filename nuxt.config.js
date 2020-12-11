@@ -16,7 +16,7 @@ export default {
     ]
   },
 
-  // loading: true,
+  loading: false,
   layoutTransition: {
     name: 'layout',
     mode: 'out-in'

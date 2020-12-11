@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{606:function(t,n,e){"use strict";e.r(n);var l={head:function(){return{title:"新闻中心"}}},r=e(106),component=Object(r.a)(l,(function(){var t=this.$createElement;return(this._self._c||t)("div",[this._v("新闻中心")])}),[],!1,null,null,null);n.default=component.exports}}]);

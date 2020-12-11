@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{609:function(t,n,e){"use strict";e.r(n);var l={head:function(){return{title:"产品中心"}}},r=e(68),component=Object(r.a)(l,(function(){var t=this.$createElement;return(this._self._c||t)("div",[this._v("产品中心")])}),[],!1,null,null,null);n.default=component.exports}}]);
