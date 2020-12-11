@@ -6,15 +6,16 @@
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
     "start": "nuxt-ts start",
-    "generate": "nuxt-ts generate"
+    "generate": "nuxt-ts generate",
+    "deploy": "yarn build && yarn generate && sh deploy.sh"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.0",
-    "ant-design-vue": "^1.6.5",
+    "ant-design-vue": "^1.7.2",
     "babel-plugin-import": "^1.13.3",
     "core-js": "^3.6.5",
     "less": "^3.12.2",
-    "less-loader": "^7.1.0",
+    "less-loader": "5.0.0",
     "nuxt": "^2.14.6",
     "sass": "^1.30.0",
     "sass-loader": "^10.1.0"

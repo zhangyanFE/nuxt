@@ -1,4 +1,6 @@
-// import Vue from 'vue'
-// import { Button } from 'ant-design-vue/es'
+import Vue from "vue";
+import { Layout, Menu } from "ant-design-vue";
+const { Item } = Menu;
 
-// Vue.use(Button)
+const { Header, Footer, Content } = Layout;
+Vue.use(Layout).use(Header).use(Footer).use(Content).use(Menu).use(Item);
