@@ -16,10 +16,7 @@ export default {
     ]
   },
 
-  loading: {
-    color: 'blue',
-    height: '5px'
-  },
+  loading: true,
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
