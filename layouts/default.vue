@@ -14,22 +14,22 @@
         <a-menu
           theme="light"
           mode="horizontal"
-          :default-selected-keys="[$route.path]"
+          :default-selected-keys="[$route.path+'/']"
           :style="{ lineHeight: '64px' }"
         >
           <a-menu-item :key="'/'">
             <NuxtLink to="/">首页</NuxtLink>
           </a-menu-item>
-          <a-menu-item :key="'/product'">
+          <a-menu-item :key="'/product' || '/product/'">
             <NuxtLink to="/product">产品中心</NuxtLink>
           </a-menu-item>
-          <a-menu-item :key="'/news'">
+          <a-menu-item :key="'/news' || '/news/'">
             <NuxtLink to="/news">新闻中心</NuxtLink>
           </a-menu-item>
-          <a-menu-item :key="'/information'">
+          <a-menu-item :key="'/information' || '/information/'">
             <NuxtLink to="/information">信息报告</NuxtLink>
           </a-menu-item>
-          <a-menu-item :key="'/about'">
+          <a-menu-item :key="'/about' || '/about/'">
             <NuxtLink to="/about">关于我们</NuxtLink>
           </a-menu-item>
         </a-menu>
