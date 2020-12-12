@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{603:function(t,e,n){"use strict";n.r(e);var o={mounted:function(){console.log(this.$route.query)}},r=n(68),component=Object(r.a)(o,(function(){var t=this.$createElement;return(this._self._c||t)("div",[this._v(this._s(this.$route.query.id))])}),[],!1,null,null,null);e.default=component.exports}}]);

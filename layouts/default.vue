@@ -20,16 +20,16 @@
           <a-menu-item :key="'/'">
             <NuxtLink to="/">首页</NuxtLink>
           </a-menu-item>
-          <a-menu-item :key="'/product' || '/product/'">
+          <a-menu-item :key="'/product/' || '/product/'">
             <NuxtLink to="/product">产品中心</NuxtLink>
           </a-menu-item>
-          <a-menu-item :key="'/news' || '/news/'">
+          <a-menu-item :key="'/news/' || '/news/'">
             <NuxtLink to="/news">新闻中心</NuxtLink>
           </a-menu-item>
-          <a-menu-item :key="'/information' || '/information/'">
+          <a-menu-item :key="'/information/' || '/information/'">
             <NuxtLink to="/information">信息报告</NuxtLink>
           </a-menu-item>
-          <a-menu-item :key="'/about' || '/about/'">
+          <a-menu-item :key="'/about/' || '/about/'">
             <NuxtLink to="/about">关于我们</NuxtLink>
           </a-menu-item>
         </a-menu>
@@ -50,7 +50,7 @@ export default {
     return {};
   },
   mounted() {
-    console.log(this.$route.path);
+    // console.log(this.$route.path);
   }
 };
 </script>

@@ -9,12 +9,21 @@
 <template>
   <div>产品中心</div>
 </template>
-<script>
-export default {
+
+<script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({
   head() {
     return {
-      title: '产品中心'
-    }
+      title: "产品中心"
+    };
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start();
+      setTimeout(() => this.$nuxt.$loading.finish(), 2000);
+    });
   }
-}
+});
 </script>

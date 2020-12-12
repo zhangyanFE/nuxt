@@ -1,10 +1,10 @@
 <template>
-    <div>{{$route.params.id}}</div>
+    <div>{{$route.query.id}}</div>
 </template>
 <script>
 export default {
     mounted() {
-        console.log(this.$route.params)
+        console.log(this.$route.query)
     }
 }
 </script>

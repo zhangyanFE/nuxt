@@ -16,7 +16,10 @@ export default {
     ]
   },
 
-  loading: false,
+  loading: {
+    color: 'blue',
+    height: '2px'
+  },
   layoutTransition: {
     name: 'layout',
     mode: 'out-in'
