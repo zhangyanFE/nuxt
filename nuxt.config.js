@@ -15,7 +15,9 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-
+  router: {
+    trailingSlash: false
+  },
   loading: {
     color: 'blue',
     height: '2px'
