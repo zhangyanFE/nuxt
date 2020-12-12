@@ -16,7 +16,7 @@ export default {
     ]
   },
   router: {
-    trailingSlash: true
+    trailingSlash: false
   },
   loading: {
     color: 'blue',
