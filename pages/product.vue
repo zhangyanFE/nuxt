@@ -22,7 +22,7 @@ export default Vue.extend({
   mounted() {
     this.$nextTick(() => {
       this.$nuxt.$loading.start();
-      setTimeout(() => this.$nuxt.$loading.finish(), 2000);
+      setTimeout(() => this.$nuxt.$loading.finish(), 500);
     });
   }
 });

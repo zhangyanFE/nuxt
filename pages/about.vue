@@ -15,6 +15,12 @@ export default {
     return {
       title: '关于我们'
     }
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start();
+      setTimeout(() => this.$nuxt.$loading.finish(), 500);
+    });
   }
 }
 </script>
