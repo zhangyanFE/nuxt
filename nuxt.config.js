@@ -17,15 +17,15 @@ export default {
   },
   generate: {
     routes: [
-      '/newsdetail?id=0',
-      '/newsdetail?id=1',
-      '/newsdetail?id=2',
-      '/newsdetail?id=3',
-      '/newsdetail?id=4',
-      '/newsdetail?id=5',
-      '/newsdetail?id=6',
-      '/newsdetail?id=7',
-      '/newsdetail?id=8',
+      '/newsdetail/0',
+      '/newsdetail/1',
+      '/newsdetail/2',
+      '/newsdetail/3',
+      '/newsdetail/4',
+      '/newsdetail/5',
+      '/newsdetail/6',
+      '/newsdetail/7',
+      '/newsdetail/8',
     ]
   },
   router: {

@@ -46,12 +46,7 @@ export default {
       if (!item.isJump) {
         return;
       }
-      this.$router.push({
-        name: "newsdetail",
-        query: {
-          id: index
-        }
-      });
+      this.$router.push(`newsdetail/${index}`);
     }
   }
 };
