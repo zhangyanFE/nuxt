@@ -15,6 +15,19 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  generate: {
+    routes: [
+      '/newsdetail?id=0',
+      '/newsdetail?id=1',
+      '/newsdetail?id=2',
+      '/newsdetail?id=3',
+      '/newsdetail?id=4',
+      '/newsdetail?id=5',
+      '/newsdetail?id=6',
+      '/newsdetail?id=7',
+      '/newsdetail?id=8',
+    ]
+  },
   router: {
     trailingSlash: false
   },
