@@ -7,14 +7,23 @@
  * @FilePath: /yilan_nuxt/pages/news.vue
 -->
 <template>
-  <div>新闻中心</div>
+  <div class="news-wrap">
+    <Card title="新闻中心" :list="list" />
+  </div>
 </template>
 <script>
+import { NewsData } from "@/pages/data";
+
 export default {
+  data() {
+    return {
+      list: NewsData()
+    };
+  },
   head() {
     return {
-      title: '新闻中心'
-    }
+      title: "新闻中心"
+    };
   },
   mounted() {
     this.$nextTick(() => {
@@ -22,5 +31,10 @@ export default {
       setTimeout(() => this.$nuxt.$loading.finish(), 500);
     });
   }
-}
+};
 </script>
+<style lang="scss" scoped>
+.news-wrap{
+  margin-top: 40px;
+}
+</style>

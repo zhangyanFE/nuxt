@@ -129,6 +129,9 @@ html {
       border-bottom: 1px solid transparent;
     }
   }
+  .ant-layout-footer {
+    background: #f7f7f7;
+  }
   @media screen and (min-width: 1560px) {
     .ant-layout-header {
       width: 1190px;
