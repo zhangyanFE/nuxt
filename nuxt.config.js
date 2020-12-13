@@ -23,6 +23,7 @@ export default {
     height: '2px',
     continuous: true
   },
+  // loading: '~/components/LoadingBar.vue',
   transition: {
     name: 'layout',
     mode: 'out-in'

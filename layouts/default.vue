@@ -113,7 +113,7 @@ html {
 }
 .layout {
   position: relative;
-  background: #fff;
+  background: #fff !important;
   .ant-menu {
     background: transparent;
   }
