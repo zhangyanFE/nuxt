@@ -7,7 +7,7 @@
  * @FilePath: /yilan_nuxt/pages/productdetail/_id.vue
 -->
 <template>
-  <div class="productdetail-wrap">
+  <div class="productdetail-wrap" v-if="detail">
     <div class="crumbs">产品中心 > {{ detail.detailInfo.title }}</div>
     <div class="shop-box">
       <img :src="detail.detailInfo.img" :alt="detail.detailInfo.title" />
