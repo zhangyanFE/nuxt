@@ -1,7 +1,7 @@
 import { version } from './package.json'
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
-  // target: 'static',
+  target: 'static',
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -15,25 +15,25 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  // generate: {
-  //   routes: [
-  //     '/newsdetail/0',
-  //     '/newsdetail/1',
-  //     '/newsdetail/2',
-  //     '/newsdetail/3',
-  //     '/newsdetail/4',
-  //     '/newsdetail/5',
-  //     '/newsdetail/6',
-  //     '/newsdetail/7',
-  //     '/newsdetail/8',
-  //     '/productdetail/0',
-  //     '/productdetail/1',
-  //     '/productdetail/2',
-  //     '/productdetail/3',
-  //     '/productdetail/4',
-  //     '/productdetail/5',
-  //   ]
-  // },
+  generate: {
+    routes: [
+      '/newsdetail/0',
+      '/newsdetail/1',
+      '/newsdetail/2',
+      '/newsdetail/3',
+      '/newsdetail/4',
+      '/newsdetail/5',
+      '/newsdetail/6',
+      '/newsdetail/7',
+      '/newsdetail/8',
+      '/productdetail/0',
+      '/productdetail/1',
+      '/productdetail/2',
+      '/productdetail/3',
+      '/productdetail/4',
+      '/productdetail/5',
+    ]
+  },
   router: {
     trailingSlash: false
   },
