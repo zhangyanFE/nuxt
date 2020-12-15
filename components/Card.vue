@@ -43,10 +43,12 @@ export default {
   },
   methods: {
     toDetail(item, index) {
-      // if (!item.isJump) {
-      //   return;
-      // }
-      this.$router.push(`newsdetail/${index}`);
+      this.$router.push({
+        path: `newsdetail/${index}`,
+        query: {
+            source: !item.isJump ? 'home' : 'news'
+          }
+      });
     }
   }
 };

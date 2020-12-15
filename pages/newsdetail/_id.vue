@@ -13,7 +13,7 @@
   </div>
 </template>
 <script>
-import { NewsData } from "@/pages/data";
+import { HomeData, NewsData } from "@/pages/data";
 
 export default {
   data() {
@@ -24,7 +24,12 @@ export default {
   created() {
     if (process.client) {
     }
-    this.detailInfo = NewsData()[this.$route.params.id].detail;
+    const { source } = this.$route.query;
+    if (source == "home") {
+      this.detailInfo = HomeData()[this.$route.params.id].detail;
+    } else {
+      this.detailInfo = NewsData()[this.$route.params.id].detail;
+    }
   },
   mounted() {
     this.$nextTick(() => {
