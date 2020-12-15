@@ -53,7 +53,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .gutter-wrap {
-  width: 90%;
+  width: 1190px;
   margin: 0 auto;
   .title {
     width: 56px;

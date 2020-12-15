@@ -26,6 +26,12 @@ export default {
       '/newsdetail/6',
       '/newsdetail/7',
       '/newsdetail/8',
+      '/productdetail/0',
+      '/productdetail/1',
+      '/productdetail/2',
+      '/productdetail/3',
+      '/productdetail/4',
+      '/productdetail/5',
     ]
   },
   router: {

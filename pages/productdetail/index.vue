@@ -1,14 +1,3 @@
 <template>
-  <div>{{ $route.query.id }}</div>
+    <div>详情页</div>
 </template>
-<script>
-export default {
-  mounted() {
-    console.log(this.$route.query);
-    this.$nextTick(() => {
-      this.$nuxt.$loading.start();
-      setTimeout(() => this.$nuxt.$loading.finish(), 500);
-    });
-  }
-};
-</script>
