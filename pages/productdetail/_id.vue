@@ -48,9 +48,9 @@ export default {
     };
   },
   created() {
-    // if (process.server) {
-    this.detail = ProductData()[this.$route.params.id].detail;
-    // }
+    if (process.server) {
+      this.detail = ProductData()[this.$route.params.id].detail;
+    }
   },
   mounted() {
     this.$nextTick(() => {
