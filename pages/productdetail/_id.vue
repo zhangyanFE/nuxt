@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-12-15 10:19:54
+ * @LastEditTime: 2020-12-15 10:52:32
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /yilan_nuxt/pages/productdetail/_id.vue
+-->
 <template>
   <div class="productdetail-wrap">
     <div class="crumbs">产品中心 > {{ detail.detailInfo.title }}</div>
@@ -40,9 +48,9 @@ export default {
     };
   },
   created() {
-    if (process.server) {
-      this.detail = ProductData()[this.$route.params.id].detail;
-    }
+    // if (process.server) {
+    this.detail = ProductData()[this.$route.params.id].detail;
+    // }
   },
   mounted() {
     this.$nextTick(() => {

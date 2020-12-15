@@ -22,9 +22,9 @@ export default {
     };
   },
   created() {
-    if (process.server) {
+    // if (process.server) {
       this.detailInfo = NewsData()[this.$route.params.id].detail;
-    }
+    // }
   },
   mounted() {
     this.$nextTick(() => {
