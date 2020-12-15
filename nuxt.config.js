@@ -12,7 +12,7 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: 'https://img.yilan.tv/favicon.ico' }
     ]
   },
   generate: {
@@ -34,9 +34,9 @@ export default {
       '/productdetail/5',
     ]
   },
-  router: {
-    trailingSlash: true
-  },
+  // router: {
+  //   trailingSlash: false
+  // },
   loading: {
     color: '#1890ff',
     height: '2px',

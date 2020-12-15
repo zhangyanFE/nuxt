@@ -8,7 +8,9 @@
 -->
 <template>
   <div class="productdetail-wrap">
-    <div class="crumbs" v-if="detail.detailInfo">产品中心 > {{ detail.detailInfo.title }}</div>
+    <div class="crumbs" v-if="detail.detailInfo">
+      产品中心 > {{ detail.detailInfo.title }}
+    </div>
     <div class="shop-box" v-if="detail.detailInfo">
       <img :src="detail.detailInfo.img" :alt="detail.detailInfo.title" />
       <div class="shop-detail">
