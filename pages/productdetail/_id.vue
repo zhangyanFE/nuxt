@@ -48,7 +48,7 @@ export default {
     };
   },
   created() {
-    if (process.server) {
+    if (process.client) {
       this.detail = ProductData()[this.$route.params.id].detail;
     }
   },

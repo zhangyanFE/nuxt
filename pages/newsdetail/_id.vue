@@ -22,7 +22,7 @@ export default {
     };
   },
   created() {
-    if (process.server) {
+    if (process.client) {
       this.detailInfo = NewsData()[this.$route.params.id].detail;
     }
   },
