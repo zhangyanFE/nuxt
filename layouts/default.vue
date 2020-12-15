@@ -38,8 +38,8 @@
         <Nuxt />
       </a-layout-content>
       <a-layout-footer style="text-align: center">
-        北京一览科技有限公司 《互联网药品信息服务资格证书》的证书编号：XXXXXX
-        联系我们：11102938
+        北京一览科技有限公司 《互联网药品信息服务资格证书》的证书编号：
+        联系我们：010-87538769
       </a-layout-footer>
     </a-layout>
   </div>
