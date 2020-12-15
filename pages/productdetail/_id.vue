@@ -49,10 +49,10 @@ export default {
   },
   created() {
     if (process.client) {
-      this.detail = ProductData()[this.$route.params.id].detail;
     }
   },
   mounted() {
+    this.detail = ProductData()[this.$route.params.id].detail;
     this.$nextTick(() => {
       this.$nuxt.$loading.start();
       setTimeout(() => this.$nuxt.$loading.finish(), 500);
