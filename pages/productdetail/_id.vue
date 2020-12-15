@@ -39,9 +39,12 @@ export default {
       detail: {}
     };
   },
+  created() {
+    if (process.server) {
+      this.detail = ProductData()[this.$route.params.id].detail;
+    }
+  },
   mounted() {
-    console.log(this.$route.params);
-    this.detail = ProductData()[this.$route.params.id].detail;
     this.$nextTick(() => {
       this.$nuxt.$loading.start();
       setTimeout(() => this.$nuxt.$loading.finish(), 500);
@@ -66,7 +69,7 @@ export default {
       border: 1px solid #e5e5e5;
     }
     .shop-detail {
-        margin-left: 47px;
+      margin-left: 47px;
     }
   }
 }

@@ -21,8 +21,12 @@ export default {
       detailInfo: {}
     };
   },
+  created() {
+    if (process.server) {
+      this.detailInfo = NewsData()[this.$route.params.id].detail;
+    }
+  },
   mounted() {
-    this.detailInfo = NewsData()[this.$route.params.id].detail;
     this.$nextTick(() => {
       this.$nuxt.$loading.start();
       setTimeout(() => this.$nuxt.$loading.finish(), 500);
