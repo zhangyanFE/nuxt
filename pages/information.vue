@@ -167,12 +167,15 @@ export default {
     .mask-qrcode {
       width: 244px;
       height: 244px;
-      background: #4a4a4a;
+      background: url("https://static.1lan.tv/Transformers/yilan-web/images/pay-qrcode.png")
+        #f9f9f9 no-repeat;
+      background-size: 244px auto;
       margin: 0 auto;
       line-height: 244px;
       text-align: center;
       padding-bottom: 41px;
       color: #ffffff;
+      text-indent: -9999px;
     }
     .mask-bottom {
       margin-top: 40px;

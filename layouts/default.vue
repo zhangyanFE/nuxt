@@ -141,8 +141,16 @@ html {
       }
     }
   }
+  .ant-layout-content{
+    margin-bottom: 70px;
+  }
   .ant-layout-footer {
     background: #f7f7f7;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
   }
   @media screen and (min-width: 1560px) {
     .ant-layout-header {
