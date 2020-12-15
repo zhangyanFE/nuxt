@@ -7,7 +7,7 @@
     "build": "nuxt-ts build",
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
-    "deploy": "yarn build && yarn generate && node ./deploy.js && sh deploy.sh"
+    "deploy": "npm run build && node ./deploy.js && sh deploy.sh"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.0",
