@@ -12,7 +12,9 @@
       产品中心 > {{ detail.detailInfo.title }}
     </div>
     <div class="shop-box" v-if="detail.detailInfo">
-      <img :src="detail.detailInfo.img" :alt="detail.detailInfo.title" />
+      <div class="shop-img">
+        <img :src="detail.detailInfo.img" :alt="detail.detailInfo.title" />
+      </div>
       <div class="shop-detail">
         <div class="shop-detail--title">{{ detail.detailInfo.title }}</div>
         <div class="shop-detail--subtitle">
@@ -52,9 +54,10 @@ export default {
   created() {
     if (process.client) {
     }
+    this.detail = ProductData()[this.$route.params.id].detail;
   },
   mounted() {
-    this.detail = ProductData()[this.$route.params.id].detail;
+    // this.detail = ProductData()[this.$route.params.id].detail;
     this.$nextTick(() => {
       this.$nuxt.$loading.start();
       setTimeout(() => this.$nuxt.$loading.finish(), 500);
@@ -72,12 +75,21 @@ export default {
   .shop-box {
     display: flex;
     margin: 26px 0 42px 0;
-    img {
+    .shop-img {
       width: 400px;
       height: 294px;
       background: #ffffff;
       border: 1px solid #e5e5e5;
+      position: relative;
+      img {
+        height: 244px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     }
+
     .shop-detail {
       margin-left: 47px;
     }
