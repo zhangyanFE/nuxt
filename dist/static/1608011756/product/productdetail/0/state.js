@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"https:\u002F\u002Fstatic.yladm.com\u002FTransformers\u002Fyilan-web\u002F1.0.2\u002Fstatic\u002F1608011756",layout:"default",error:{statusCode:404,path:a,message:"This page could not be found"},serverRendered:false,routePath:a,config:{}}}("\u002Fproduct\u002Fproductdetail\u002F0"));
