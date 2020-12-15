@@ -35,7 +35,7 @@ export default {
     ]
   },
   router: {
-    trailingSlash: false
+    trailingSlash: true
   },
   loading: {
     color: '#1890ff',
