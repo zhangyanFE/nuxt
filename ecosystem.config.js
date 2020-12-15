@@ -3,7 +3,7 @@ module.exports = {
       {
         name: "yilan_nuxt",
         cwd: "./",
-        script: "server/index.js",
+        script: "npm run start",
         instances: 1,
         max_restarts: 300,
         exec_mode: "cluster_mode",
