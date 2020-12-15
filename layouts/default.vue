@@ -50,7 +50,7 @@ export default {
     return {};
   },
   mounted() {
-    // console.log(this.$route.path);
+    console.log(this.$route.path);
   }
 };
 </script>
