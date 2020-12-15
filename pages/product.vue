@@ -91,7 +91,7 @@ export default Vue.extend({
       display: block;
       height: 150px;
       margin: 0 auto;
-      background: #999;
+      background: #f9f9f9;
     }
     .title {
       font-size: 20px;

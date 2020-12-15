@@ -127,6 +127,18 @@ html {
     margin: 0 auto;
     .ant-menu-horizontal {
       border-bottom: 1px solid transparent;
+      .ant-menu-item-selected,
+      .ant-menu-item-active {
+        border-bottom: 2px solid transparent;
+        a {
+          color: #0063cb;
+        }
+      }
+      .ant-menu-item-selected {
+        a {
+          font-weight: bold;
+        }
+      }
     }
   }
   .ant-layout-footer {

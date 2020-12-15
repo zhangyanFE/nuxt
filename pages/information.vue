@@ -26,10 +26,11 @@
             <div class="row-title">
               {{ item.title }}
             </div>
-            <p class="desc">
-              {{ item.desc }}
+            <p class="img">
+              <!-- {{ item.desc }} -->
+              <img :src="item.img" :alt="item.title" />
             </p>
-            <p class="payinfo">{{ item.payinfo }}</p>
+            <!-- <p class="payinfo">{{ item.payinfo }}</p> -->
             <div class="mask-box" v-if="item.isActive">
               <div class="mask-title">{{ item.title }}</div>
               <div class="mask-qrcode">二维码</div>
@@ -104,7 +105,7 @@ export default {
   }
   .gutter-box {
     position: relative;
-    height: 500px;
+    height: 510px;
     background: #ffffff;
     border: 1px solid #e5e5e5;
     padding: 23px 0 13px 0;
@@ -117,13 +118,18 @@ export default {
       padding: 0 15px;
       margin-bottom: 16px;
     }
-    .desc {
+    .img {
       font-size: 14px;
       font-family: PingFangSC, PingFangSC-Regular;
       font-weight: 400;
       color: #3f3f3f;
       line-height: 24px;
       padding: 0 15px;
+      img {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+      }
     }
     .payinfo {
       font-size: 14px;
@@ -145,7 +151,7 @@ export default {
     position: absolute;
     top: 0;
     left: 0;
-    height: 500px;
+    height: 510px;
     background: #ffffff;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.32);
     .mask-title {

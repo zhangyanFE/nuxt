@@ -26,12 +26,6 @@ export default {
       '/newsdetail/6',
       '/newsdetail/7',
       '/newsdetail/8',
-      '/product/productdetail/0',
-      '/product/productdetail/1',
-      '/product/productdetail/2',
-      // '/newsdetail/9',
-      // '/newsdetail/10',
-      // '/newsdetail/11',
       '/productdetail/0',
       '/productdetail/1',
       '/productdetail/2',
@@ -44,7 +38,7 @@ export default {
   //   trailingSlash: false
   // },
   loading: {
-    color: '#1890ff',
+    color: '#0063cb',
     height: '2px',
     continuous: true
   },
