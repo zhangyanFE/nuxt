@@ -1,13 +1,13 @@
 {
   "name": "yilan_nuxt",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "scripts": {
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
-    "deploy": "npm run build && node ./deploy.js && sh deploy.sh"
+    "deploy": "yarn build && yarn generate && node ./deploy.js && sh deploy.sh"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.0",
