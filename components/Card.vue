@@ -43,9 +43,9 @@ export default {
   },
   methods: {
     toDetail(item, index) {
-      if (!item.isJump) {
-        return;
-      }
+      // if (!item.isJump) {
+      //   return;
+      // }
       this.$router.push(`newsdetail/${index}`);
     }
   }

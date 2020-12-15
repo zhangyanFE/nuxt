@@ -4,18 +4,21 @@ export const HomeData = () => ([
         desc: '12月8日，科济生物宣布，其CT053全人抗BCMA自体CAR T细胞注射液通过CDE公示期，纳入突破性治疗药物品种，拟定适应症为复发难治性多发性骨髓瘤(R/R MM)。宣布，其CT053全人抗BCMA自体CAR T细胞注射液通过CDE公示期，纳入突破性治疗',
         date: '2020-12-09 15:12',
         isJump: false,
+        index: 9
     },
     {
         title: '科济生物CT053全人抗BCMA CAR T细胞注射液纳入突破性治疗品种',
         desc: '12月8日，科济生物宣布，其CT053全人抗BCMA自体CAR T细胞注射液通过CDE公示期，纳入突破性治疗药物品种，拟定适应症为复发难治性多发性骨髓瘤(R/R MM)。宣布，其CT053全人抗BCMA自体CAR T细胞注射液通过CDE公示期，纳入突破性治疗',
         date: '2020-12-09 15:12',
-        isJump: false
+        isJump: false,
+        index: 10
     },
     {
         title: '科济生物CT053全人抗BCMA CAR T细胞注射液纳入突破性治疗品种',
         desc: '12月8日，科济生物宣布，其CT053全人抗BCMA自体CAR T细胞注射液通过CDE公示期，纳入突破性治疗药物品种，拟定适应症为复发难治性多发性骨髓瘤(R/R MM)。宣布，其CT053全人抗BCMA自体CAR T细胞注射液通过CDE公示期，纳入突破性治疗',
         date: '2020-12-09 15:12',
-        isJump: false
+        isJump: false,
+        index: 11
     }
 ])
 
