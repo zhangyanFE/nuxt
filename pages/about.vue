@@ -11,8 +11,13 @@
     <div class="about-wrap__box">
       <div class="about-wrap__box--title">关于我们</div>
       <div class="about-wrap__box--desc">
-        北京一览科技有限公司出资组建的网站，公司依托先进的网络研发技术及专业设计制作团队，致力于为中国各行业企业和人士提供专业的了解医药常识的网站。
-        一览科技网以遵寻为用户了了解日常养生基本常识为目标进行努力不懈推动。
+        北京一览科技有限公司公司创建于2020年，是医药类综合网站。作为互联网的先行者，医药网依托诚信的作风和强大的技术优势，凭借丰富的用户资源，已经成为医药媒体领域中传播力和影响力较强的网络专业媒体平台之一。
+      </div>
+      <div class="about-wrap__box--list">
+        <p>建网目的</p>
+        <p>1．服务于医药行业：提供实用的（商业、专业）信息发布、交流及检索平台；</p>
+        <p>2．服务于老百姓：提供健康信息和基础医药知识，并就某些产品质量作出警示；</p>
+        <p>3．服务于政府：提供政策法规宣传、普及和扩大相关公告通报的影响。</p>
       </div>
     </div>
   </div>
@@ -57,6 +62,9 @@ export default {
       font-family: PingFangSC, PingFangSC-Regular;
       font-weight: 400;
       line-height: 30px;
+    }
+    &--list{
+      margin-top: 50px;
     }
   }
 }
