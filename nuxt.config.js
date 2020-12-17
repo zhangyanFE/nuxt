@@ -36,7 +36,7 @@ export default {
   },
   router: {
     // trailingSlash: false
-    base: '/app/'
+    // base: '/app/'
   },
 
   // loading: {
