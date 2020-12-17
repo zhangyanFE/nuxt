@@ -34,10 +34,11 @@ export default {
       '/productdetail/5',
     ]
   },
-  router: {
-    // trailingSlash: false
-    // base: '/app/'
-  },
+
+  // router: {
+  //   trailingSlash: false,
+  //   base: '/app/'
+  // },
 
   // loading: {
   //   color: '#0063cb',
