@@ -34,18 +34,28 @@ export default {
       '/productdetail/5',
     ]
   },
-  // router: {
-  //   trailingSlash: false
-  // },
-  loading: {
-    color: '#0063cb',
-    height: '2px',
-    continuous: true
+  router: {
+    // trailingSlash: false
+    base: '/app/'
   },
-  // loading: '~/components/LoadingBar.vue',
+
+  // loading: {
+  //   color: '#0063cb',
+  //   height: '2px',
+  //   continuous: true,
+  //   duration: 3000
+  // },
+  
+  loading: '~/components/LoadingBar.vue',
   transition: {
     name: 'layout',
     mode: 'out-in'
+  },
+
+  // 脚手架
+  cli: {
+    badgeMessages: ['Hello World!'],
+    bannerColor: 'yellow'
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -66,6 +76,9 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
+    // '@nuxtjs/proxy',
+    '@nuxtjs/axios',
+    // '@nuxt/http'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -108,5 +121,18 @@ export default {
       ]
     },
     transpile: [/ant-design-vue/],
+    // postcss: {
+    //   plugins: {
+    //     'postcss-url': true,
+    //     'postcss-nested': {},
+    //     'postcss-responsive-type': {},
+    //     'postcss-hexrgba': {}
+    //   },
+    //   preset: {
+    //     autoprefixer: {
+    //       grid: true
+    //     }
+    //   }
+    // }
   }
 }
